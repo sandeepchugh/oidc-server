@@ -1,0 +1,9 @@
+db:
+  image: "mcr.microsoft.com/azure-sql-edge"
+  ports:
+    - "1433:1433"
+  environment:
+    SA_PASSWORD: "P@$$w0rdAndSomeComplexText"
+    ACCEPT_EULA: "Y"
+#  volumes:
+#    - "/dev/db_data:/var/opt/mssql/data"

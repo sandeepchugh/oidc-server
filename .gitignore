@@ -1,0 +1,8 @@
+.DS_Store
+.idea
+**/bin/**
+**/obj/**
+
+**/Localization/**
+
+**/App_Data/**

@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: ./OIDCServer/Dockerfile
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    depends_on:
+      - db
+  db:
+    image: "mcr.microsoft.com/mssql/server:2019-latest"
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "P@$$w0rdAndSomeComplexText"
+      ACCEPT_EULA: "Y"
