@@ -8,3 +8,5 @@
 **/App_Data/**
 
 **/data/**
+
+appsettings.Development.json
