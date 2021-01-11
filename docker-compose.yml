@@ -14,5 +14,5 @@ services:
     ports:
       - "1433:1433"
     environment:
-      SA_PASSWORD: "P@$$w0rdAndSomeComplexText"
+      SA_PASSWORD: "P@ssw0rdAndSomeText"
       ACCEPT_EULA: "Y"

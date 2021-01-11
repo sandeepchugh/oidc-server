@@ -2,6 +2,20 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OIDCServer", "OIDCServer\OIDCServer.csproj", "{226BBF3A-FFE3-4661-A1D7-724E7FAEAE08}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{B236CA50-02AD-4678-8036-B6CAA14B661F}"
+ProjectSection(SolutionItems) = preProject
+	docker-compose-arm-db.yml = docker-compose-arm-db.yml
+	docker-compose-no-db.yml = docker-compose-no-db.yml
+	docker-compose-sql-arm.yml = docker-compose-sql-arm.yml
+	docker-compose-sql.yml = docker-compose-sql.yml
+	docker-compose.yml = docker-compose.yml
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{87312376-7D62-4C01-AC81-562536406402}"
+ProjectSection(SolutionItems) = preProject
+	README.md = README.md
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

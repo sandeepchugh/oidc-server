@@ -1,9 +1,12 @@
-db:
-  image: "mcr.microsoft.com/mssql/server:2019-latest"
-  ports:
-    - "1433:1433"
-  environment:
-    SA_PASSWORD: "P@$$w0rdAndSomeComplexText"
-    ACCEPT_EULA: "Y"
-#  volumes:
-#    - "/dev/db_data:/var/opt/mssql/data"
+version: "3.8"
+services:
+  db:
+    image: "mcr.microsoft.com/mssql/server:2019-latest"
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "P@ssw0rdAndSomeText"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - ./data:/var/opt/mssql
+      
